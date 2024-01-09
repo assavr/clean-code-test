@@ -6,53 +6,57 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="header">
+    <h1 class="main-title">Todo App</h1>
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <!-- Добавить вместо p ul -->
-      <p class="add-item__list">
+    </header>
+    <main class="main">
+      <section class="add-item__list">
         <label class="add-item__label task-label" for="add-item">Add Item</label>
         <div class="add-item__wrapper">
           <input id="add-item" class="add-item__input list-elem" type="text">
           <button class="btn">Add</button>
         </div>
-      </p>
-      <h3 class="section-title">Todo</h3>
-      <ul id="incomplete-tasks__list">
-        <li class="incomplete-task">
-          <input class="incomplete-task__input" type="checkbox">
-          <label class="incomplete-task__label list-elem task-label">Pay Bills</label>
-          <input class="incomplete-task__input list-elem" type="text">
-          <button class="btn__edit btn">Edit</button>
-          <button class="btn__delete btn">
-            <img class="img-delete" src="./remove.svg">
-          </button>
-        </li>
-        <li class="incomplete-task incomplete-task_edit-mode">
-          <input class="incomplete-task__input" type="checkbox">
-          <label class="list-elem task-label">Go Shopping</label>
-          <input class="incomplete-task__input list-elem" type="text" value="Go Shopping">
-          <button class="btn__edit btn">Save</button>
-          <button class="btn__delete btn">
-            <img class="img-delete" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="section-title">Completed</h3>
-      <ul id="completed-tasks__list">
-        <li class="completed-task">
-          <input class="completed-task__input" type="checkbox" checked>
-          <label class="completed-tasks__label list-elem task-label">See the Doctor</label>
-          <input type="text" class="completed-task__input list-elem">
-          <button class="btn__edit btn">Edit</button>
-          <button class="btn__delete btn">
-            <img class="img-delete" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
+      </section>
+      <section class="incomplete-section">
+        <h2 class="section-title">Todo</h2>
+        <ul id="incomplete-tasks__list">
+          <li class="incomplete-task">
+            <input class="incomplete-task__input" type="checkbox">
+            <label class="incomplete-task__label list-elem task-label">Pay Bills</label>
+            <input class="incomplete-task__input list-elem" type="text">
+            <button class="btn__edit btn">Edit</button>
+            <button class="btn__delete btn">
+              <img class="img-delete" src="./remove.svg">
+            </button>
+          </li>
+          <li class="incomplete-task incomplete-task_edit-mode">
+            <input class="incomplete-task__input" type="checkbox">
+            <label class="list-elem task-label">Go Shopping</label>
+            <input class="incomplete-task__input list-elem" type="text" value="Go Shopping">
+            <button class="btn__edit btn">Save</button>
+            <button class="btn__delete btn">
+              <img class="img-delete" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed-section">
+        <h2 class="section-title">Completed</h2>
+        <ul id="completed-tasks__list">
+          <li class="completed-task">
+            <input class="completed-task__input" type="checkbox" checked>
+            <label class="completed-tasks__label list-elem task-label">See the Doctor</label>
+            <input type="text" class="completed-task__input list-elem">
+            <button class="btn__edit btn">Edit</button>
+            <button class="btn__delete btn">
+              <img class="img-delete" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
