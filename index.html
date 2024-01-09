@@ -13,7 +13,7 @@
     <div class="main">
       <!-- Добавить вместо p ul -->
       <p class="add-item__list">
-        <label class="add-item__label" for="add-item">Add Item</label>
+        <label class="add-item__label task-label" for="add-item">Add Item</label>
         <div class="add-item__wrapper">
           <input id="add-item" class="add-item__input list-elem" type="text">
           <button class="btn">Add</button>
@@ -23,7 +23,7 @@
       <ul id="incomplete-tasks__list">
         <li class="incomplete-task">
           <input class="incomplete-task__input" type="checkbox">
-          <label class="incomplete-task__label list-elem">Pay Bills</label>
+          <label class="incomplete-task__label list-elem task-label">Pay Bills</label>
           <input class="incomplete-task__input list-elem" type="text">
           <button class="btn__edit btn">Edit</button>
           <button class="btn__delete btn">
@@ -32,7 +32,7 @@
         </li>
         <li class="incomplete-task incomplete-task_edit-mode">
           <input class="incomplete-task__input" type="checkbox">
-          <label class="list-elem">Go Shopping</label>
+          <label class="list-elem task-label">Go Shopping</label>
           <input class="incomplete-task__input list-elem" type="text" value="Go Shopping">
           <button class="btn__edit btn">Save</button>
           <button class="btn__delete btn">
@@ -44,7 +44,7 @@
       <ul id="completed-tasks__list">
         <li class="completed-task">
           <input class="completed-task__input" type="checkbox" checked>
-          <label class="completed-tasks__label list-elem">See the Doctor</label>
+          <label class="completed-tasks__label list-elem task-label">See the Doctor</label>
           <input type="text" class="completed-task__input list-elem">
           <button class="btn__edit btn">Edit</button>
           <button class="btn__delete btn">

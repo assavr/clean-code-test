@@ -139,7 +139,7 @@ button {
 }
 
 /* Completed */
-.completed-tasks__list #completed-tasks__list .completed-tasks__label {
+#completed-tasks__list .task-label {
   text-decoration: line-through;
   color: #888;
 }
@@ -150,7 +150,8 @@ button {
   display: none;
 }
 
-.incomplete-task_edit-mode .incomplete-task__input[type="text"] {
+.incomplete-task_edit-mode .incomplete-task__input[type="text"],
+.incomplete-task_edit-mode .completed-task__input[type="text"] {
   display: inline-block;
   width: 224px;
 }
